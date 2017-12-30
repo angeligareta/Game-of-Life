@@ -4,6 +4,9 @@ Implementation of Conway's Game of Life in C++. The Game of Life is a cellular a
 The "game" is a zero-player game, it's evolution is determined by its initial state, requiring no further input. 
 One interacts with the Game of Life by creating an initial configuration and observing how it evolves, or, for advanced "players", by creating patterns with particular properties.
 
+## Author
+Ángel Luis Igareta Herráiz
+
 ## INDEX
 * [Usage](#usage)
   * [Example workflow](#example-workflow)
