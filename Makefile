@@ -9,6 +9,7 @@ SOURCES=$(shell find $(SRCDIR) -type f -name *.cpp)
 OBJECTS=$(patsubst $(SRCDIR)/%.cpp,$(BUILDDIR)/%.o,$(SOURCES))
 
 $(BUILDDIR)/%.o: $(SRCDIR)/%.cpp
+	@mkdir -p bin
 	@mkdir -p $(BUILDDIR)
 	@mkdir -p $(BUILDDIR)/ExtendedCells
 	@echo " $(CXX) $(CXXFLAGS) $(INC) -c -o $@ $<"; $(CXX) $(CXXFLAGS) -c -o $@ $<
